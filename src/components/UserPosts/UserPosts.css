@@ -1,0 +1,9 @@
+.user_posts { width: 100%; }
+
+.posts_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}

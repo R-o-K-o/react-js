@@ -1,0 +1,11 @@
+.post { width: 19%; }
+
+.post_title {
+    color: #d2d266;
+    font-size: 19px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post_title:first-letter { text-transform: uppercase; }

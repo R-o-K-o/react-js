@@ -1,0 +1,7 @@
+.geo { margin-top: 20px }
+
+.geo_data  {
+    display: flex;
+    column-gap: 100px;
+    padding-left: 5px;
+}

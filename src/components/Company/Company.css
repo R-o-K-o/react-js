@@ -1,0 +1,4 @@
+.company_data  {
+    display: flex;
+    column-gap: 80px;
+}

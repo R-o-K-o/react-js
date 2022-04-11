@@ -1,7 +1,7 @@
 import './User.css';
 
-export const User = ({user: {id, name}, getUserId}) => {
-    const chooseUserClick = () => getUserId(id);
+export const User = ({user: {id, name}, chooseUser}) => {
+    const chooseUserClick = () => chooseUser(id);
 
     return (
         <div className="user">

@@ -1,7 +1,17 @@
+import {useEffect, useState} from "react";
+
 import './Users.css';
 import {User} from "../User/User";
 
-export const Users = ({users, getUserId}) => {
+import {userService} from "../../services";
+
+export const Users = ({chooseUser}) => {
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        userService.getAll().then(({data}) => setUsers(data));
+    }, []);
+
     return (
         <div className="users wrap">
             <h2 className="title">users list</h2>
@@ -9,7 +19,7 @@ export const Users = ({users, getUserId}) => {
                 {users.map(user =>
                     <User key={user.id}
                           user={user}
-                          getUserId={getUserId}
+                          chooseUser={chooseUser}
                     />
                 )}
             </div>

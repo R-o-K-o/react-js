@@ -19,7 +19,7 @@ export const Address = ({address: {city, street, suite, zipcode, geo}}) => {
                     <li>{zipcode}</li>
                 </ul>
             </div>
-            <Geo geo={geo}/>
+            <Geo geo={geo} />
         </div>
     );
 };

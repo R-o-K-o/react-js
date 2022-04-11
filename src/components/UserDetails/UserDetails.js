@@ -2,7 +2,7 @@ import './UserDetails.css';
 import {Address} from "../Address/Address";
 import {Company} from "../Company/Company";
 
-export const UserDetails = ({chosenUser, getUserPosts}) => {
+export const UserDetails = ({user, choosePosts}) => {
     const {
         id,
         name,
@@ -12,9 +12,9 @@ export const UserDetails = ({chosenUser, getUserPosts}) => {
         website,
         address,
         company
-    } = chosenUser;
+    } = user;
 
-    const choosePostsClick = () => getUserPosts(id);
+    const choosePostsClick = () => choosePosts(id);
 
     return (
         <div className="user_details_wrap wrap">
@@ -41,8 +41,8 @@ export const UserDetails = ({chosenUser, getUserPosts}) => {
                             </ul>
                         </div>
                     </div>
-                    <Address address={address}/>
-                    <Company company={company}/>
+                    <Address address={address} />
+                    <Company company={company} />
                 </div>
             </div>
             <button

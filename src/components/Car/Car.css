@@ -1,0 +1,43 @@
+.car {
+    width: 32.5%;
+    padding: 12px 25px 20px;
+    border: 3px solid #232323;
+    border-radius: 10px;
+    background: #c4c4c4;
+}
+
+.car_model {
+    color: #646b6b;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.car_model, .hint > li, .data > li, .car_buttons > button { letter-spacing: .1rem; }
+
+.car_info {
+    display: flex;
+    column-gap: 100px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.hint > li, .data > li {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 17px;
+}
+
+.car_buttons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.car_buttons > button {
+    color: whitesmoke;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 9px;
+    border: 3px solid whitesmoke;
+    border-radius: 25px;
+    background: #4f4f4f;
+}

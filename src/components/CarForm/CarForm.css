@@ -1,0 +1,47 @@
+.car_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+input {
+    min-width: 280px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    padding: 2px 12px;
+    outline: none;
+    border: 3px solid #0d7171;
+    border-radius: 10px;
+    background: #f6f6f6;
+}
+
+input::placeholder {
+    color: #474545;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.form_btn {
+    color: beige;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 5px 13px;
+    border: none;
+    border-radius: 10px;
+    background: #0d7171;
+}
+
+.valid {
+    color: #e35a5a;
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+
+}

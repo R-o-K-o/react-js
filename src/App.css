@@ -1,49 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /*font-family: 'Montserrat', sans-serif;*/
 /*font-family: 'Bebas Neue', cursive;*/
 
 * {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body { background: #e8e8e8; }
-
-.container { padding: 15px 30px 25px; }
-
-form>button, button, .car { letter-spacing: .1rem; }
-
-.buttons { margin-top: 12px; }
-
-.buttons > button, .form_btn {
-  margin-right: 15px;
-  padding: 3px 6px;
-}
-
-.cars {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 40px;
-}
-
-.car {
-  min-width: 400px;
-  padding: 10px 25px;
-  border: 4px solid teal;
-  border-radius: 15px;
-  background: #b9b9b9;
-}
-
-input {
-  min-width: 220px;
-  margin-bottom: 7px;
-  padding: 1px 10px;
-  outline: none;
-  border: 3px solid gray;
-  border-radius: 10px;
-}

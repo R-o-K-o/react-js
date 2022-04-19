@@ -1,0 +1,7 @@
+.home_page {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.logo_img { width: 400px; }

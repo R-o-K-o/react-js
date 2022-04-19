@@ -1,0 +1,38 @@
+.users_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.users_content { min-width: 40%; }
+
+.users_cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.buttons {
+    margin-top: 29px;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.btn_prev, .btn_next {
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 4px 8px;
+    border: 2px solid #000;
+    background: transparent;
+}
+
+.btn_prev:disabled, .btn_next:disabled {
+    color: rgba(0, 0, 0, 0.34);
+    border: 2px solid rgba(0, 0, 0, 0.46);
+    background: rgba(204, 204, 204, 0.38);
+}
+
+.user_details { width: 52%; }

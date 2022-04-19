@@ -1,0 +1,15 @@
+.user {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid teal;
+}
+
+.user_name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: #688686;
+    letter-spacing: 1px;
+}

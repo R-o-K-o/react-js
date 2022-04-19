@@ -1,0 +1,21 @@
+.post {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid teal;
+}
+
+.post_title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: #688686;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 30px;
+}
+
+.post_title:first-letter { text-transform: uppercase; }

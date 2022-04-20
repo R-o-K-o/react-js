@@ -1,0 +1,10 @@
+.my_link_button {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 5px 10px;
+    border: 2px solid #000;
+    background: transparent;
+}

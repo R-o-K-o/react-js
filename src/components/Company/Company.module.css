@@ -1,0 +1,37 @@
+.company_data { padding-left: 15px; }
+
+.subtitle {
+    font-size: 17px;
+    color: #7e7e7e;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-bottom: 8px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.hint { width: 30%; }
+
+.data { width: 55%; }
+
+.data > li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hint, .data {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #363636;
+    line-height: 15px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}

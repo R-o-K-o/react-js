@@ -1,0 +1,14 @@
+.user {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid teal;
+}
+
+.user_name {
+    font-size: 25px;
+    color: #688686;
+    letter-spacing: 1px;
+}

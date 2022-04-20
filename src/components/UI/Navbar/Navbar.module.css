@@ -1,0 +1,45 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: #cece65;
+    text-transform: capitalize;
+}
+
+.navigate {
+    display: flex;
+    column-gap: 20px;
+}
+
+.links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.links li a, .log_out_btn {
+    font-size: 11px;
+    font-weight: 700;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 2px 8px;
+    border: 2px solid #d9d1d1;
+    border-radius: 5px;
+}
+
+.links li a[class="active"] {
+    color: #cece65;
+    border: 2px solid #cece65;
+}
+
+.log_out_btn { background: transparent; }
+
+.log_out_btn:hover {
+    color: #ff8383;
+    border-color: #ff8383;
+}

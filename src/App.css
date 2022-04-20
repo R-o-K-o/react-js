@@ -1,10 +1,14 @@
 * {
+  font-family: 'Space Mono', monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  background: #e8e8e8;
-}
+a { text-decoration: none; }
+
+button, input { outline: none; }
+
+button { cursor: pointer; }
+
+ul { list-style: none; }

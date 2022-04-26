@@ -2,11 +2,6 @@ import {axiosService} from "./axios.service";
 import {urls} from "../constants";
 
 export const userService = {
-    getAll: (page, _limit = 8) => axiosService.get(urls.users, {
-        params: {
-            _start: (page - 1) * _limit,
-            _limit,
-        },
-    }),
+    getAll: () => axiosService.get(urls.users),
     getById: (id) => axiosService.get(`${urls.users}/${id}`),
 };

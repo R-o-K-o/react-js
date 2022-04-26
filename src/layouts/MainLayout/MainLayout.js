@@ -1,13 +1,12 @@
-import {Outlet} from "react-router-dom";
-
 import classes from './MainLayout.module.css';
-import {Header} from "../../components";
+import {Header, Main, Footer} from "../../components/UI/Frames";
 
 export const MainLayout = () => {
     return (
-        <div className={classes.main_layout}>
+        <div className={classes.page}>
             <Header />
-            <Outlet />
+            <Main />
+            <Footer />
         </div>
     );
 };

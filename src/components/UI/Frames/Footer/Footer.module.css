@@ -1,0 +1,19 @@
+.footer {
+    margin-top: auto;
+    background: #676767;
+}
+
+.wrap {
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 15px;
+    font-weight: 700;
+    color: #c7c7c7;
+    text-align: center;
+    letter-spacing: 1px;
+}

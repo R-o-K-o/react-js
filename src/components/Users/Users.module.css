@@ -1,15 +1,11 @@
-.users {
+.users, .users_cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 35px;
 }
 
-.users_cards {
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-}
+.users { row-gap: 45px; }
+
+.users_cards { row-gap: 15px; }
 
 .buttons {
     display: flex;

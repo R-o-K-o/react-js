@@ -1,7 +1,9 @@
 .home_page {
     display: flex;
     justify-content: center;
-    margin-top: 170px;
 }
 
-.logo_img {}
+.logo_img {
+    width: 480px;
+    height: 480px;
+}

@@ -1,0 +1,40 @@
+.counters {}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 100px;
+}
+
+.title {
+    color: teal;
+    text-transform: uppercase;
+}
+
+.title, .value {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.value {
+    font-size: 45px;
+    color: #484848;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+}
+
+.buttons > button {
+    width: 80px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+    padding: 0 6px;
+    outline: none;
+    cursor: pointer;
+}

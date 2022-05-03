@@ -1,0 +1,43 @@
+.car_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin-bottom: 70px;
+}
+
+.car_form > div > input {
+    width: 250px;
+    padding: 4px 6px;
+    border: 3px solid teal;
+    border-radius: 5px;
+}
+
+.car_form > div > input::placeholder {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.form_err {
+    font-size: 11px;
+    font-weight: 600;
+    color: #ef5353;
+    text-transform: uppercase;
+}
+
+.car_btn {
+    font-size: 12px;
+    font-weight: 600;
+    color: #d3d3d3;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 8px;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    background: teal;
+}
+
+.car_btn:hover { background: #216767; }

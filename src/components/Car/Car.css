@@ -1,0 +1,29 @@
+.car {
+    width: 32.5%;
+    padding: 15px;
+    border: 3px solid teal;
+}
+
+.car_model {
+    color: #5b5b5b;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.car_info {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.hint, .data {
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.hint { font-size: 13px; }
+
+.data { font-size: 15px; }

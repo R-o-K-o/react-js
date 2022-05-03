@@ -1,0 +1,3 @@
+ Запит на URL => http://owu.linkpc.net/api/v2 (Redux, Slice, AsyncThunk)
+- вивести всі машинки
+- форма для машинки

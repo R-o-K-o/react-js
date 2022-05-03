@@ -1,9 +1,11 @@
 import './App.css'
+import {CarForm, Cars} from "./components";
 
 export const App = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <CarForm />
+            <Cars />
+        </>
     );
 };

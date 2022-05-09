@@ -1,0 +1,29 @@
+.episode {
+    width: 32.5%;
+    padding: 7px 15px 15px;
+    border: 3px solid teal;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.episode:hover { border: 3px solid #e57272; }
+
+.episode_name {
+    color: #696969;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 14px;
+}
+
+.episode_info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.hint, .data {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}

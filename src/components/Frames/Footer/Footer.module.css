@@ -1,0 +1,22 @@
+.footer {
+    margin-top: auto;
+    background: #676767;
+}
+
+.wrap {
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #c7c7c7;
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: .2em;
+}
+
+.text span { text-transform: uppercase; }

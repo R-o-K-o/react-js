@@ -1,0 +1,20 @@
+.pagination { margin-top: 65px }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.buttons > button {
+    color: whitesmoke;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 3px;
+    background: #676767;
+}
+
+.buttons > button:hover, .buttons > button:disabled { background: #bd5151; }

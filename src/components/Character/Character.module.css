@@ -1,0 +1,26 @@
+.character {
+    width: 226px;
+    cursor: pointer;
+}
+
+.character_img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.character_img img { width: 226px; }
+
+.character_img img:hover { border: 4px solid #e57272; }
+
+.character_name {
+    font-size: 18px;
+    color: #c7c7c7;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 12px;
+}
+
+.character_name:hover {color: #e57272; }

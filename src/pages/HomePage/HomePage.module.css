@@ -1,0 +1,20 @@
+.home_page {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("https://images.hdqwalls.com/download/rick-and-morty-netflix-2020-9d-1680x1050.jpg") 50%/cover  no-repeat;
+}
+
+.title {
+    min-width: 350px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 42px;
+    color: #e0d824;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    word-spacing: 0.3rem;
+    background: rgba(45, 45, 45, 0.46);
+    margin-top: 15px;
+}

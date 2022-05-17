@@ -1,19 +1,31 @@
+import {useEffect, useState} from "react";
+import {useLocation, useParams} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+
+import {characterActions} from "../../redux";
+
+import {CharacterDetails} from "../../components";
 import css from './SingleCharacterPage.module.css';
-import {useLocation, useParams} from "react-router";
-import {useEffect} from "react";
 
 export const SingleCharacterPage = () => {
-    // {id, name, gender, species, status, image}
     const {state} = useLocation();
-    const {id} = useLocation();
+    const {id} = useParams();
+    const {character} = useSelector(stata => stata.characters);
+    const [characterItem, setCharacterItem] = useState(null);
+    const dispatch = useDispatch();
 
     useEffect(() => {
-
-    }, []);
+        if (!state) {
+            dispatch(characterActions.getById({id}));
+        } else {
+            setCharacterItem(state);
+        }
+    }, [id, state]);
 
     return (
         <div className={css.single_character_page}>
-            SingleCharacterPage
+            <h1 className={css.title}>character details</h1>
+            <CharacterDetails character={!characterItem ? character : characterItem}/>
         </div>
     );
 };

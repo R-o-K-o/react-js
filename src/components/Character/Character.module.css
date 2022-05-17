@@ -1,17 +1,24 @@
-.character {
-    width: 226px;
+.character_card {
+    width: 200px;
     cursor: pointer;
+    transition: all .5s;
 }
 
 .character_img {
     display: flex;
     justify-content: center;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 }
 
-.character_img img { width: 226px; }
+.character_img img {
+    width: 200px;
+    height: 200px;
+}
 
-.character_img img:hover { border: 4px solid #e57272; }
+.character_img img:hover {
+    border: 5px solid #ca563f;
+    opacity: 0.8;
+}
 
 .character_name {
     font-size: 18px;
@@ -20,7 +27,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 12px;
 }
 
-.character_name:hover {color: #e57272; }
+.character_name:hover {
+    color: #ca563f;
+}

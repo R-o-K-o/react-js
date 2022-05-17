@@ -1,1 +1,15 @@
-.login_page {}
+.login_page {
+    min-width: 50vw;
+    padding: 15px;
+}
+
+.title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: #b9be48;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    word-spacing: 0.3rem;
+    margin-bottom: 65px;
+}

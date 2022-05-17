@@ -1,2 +1,4 @@
 export * from './Loader/Loader';
-export * from './Pagination/Pagination'
+export * from './Button/Button';
+export * from './ButtonBack/ButtonBack';
+export * from './Pagination/Pagination';

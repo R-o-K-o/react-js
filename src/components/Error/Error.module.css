@@ -1,0 +1,10 @@
+.error_msg {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: #be2c2c;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    word-spacing: 0.3rem;
+    margin-bottom: 30px;
+}

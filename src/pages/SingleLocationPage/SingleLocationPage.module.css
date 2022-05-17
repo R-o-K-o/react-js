@@ -1,0 +1,15 @@
+.single_location_page {
+    min-width: 50vw;
+}
+
+.title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: #b9be48;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    word-spacing: 0.3rem;
+    margin-bottom: 75px;
+    padding: 15px;
+}

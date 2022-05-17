@@ -1,0 +1,19 @@
+.character_filter {
+}
+
+.character_filter input {
+    min-width: 250px;
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+    padding: 2px 9px;
+    border: 2px solid #939393;
+    border-radius: 10px;
+}
+
+.character_filter input::placeholder {
+    font-size: 13px;
+    font-weight: 500;
+    color: grey;
+    text-transform: capitalize;
+}

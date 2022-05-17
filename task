@@ -1,0 +1,6 @@
+ - запит на URL => https://rickandmortyapi.com/api/ (redux, slice, asyncThunk)
+ - routing
+ - pagination
+ - search query
+ - authorization (login, logout)
+ - css

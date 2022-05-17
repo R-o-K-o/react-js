@@ -1,1 +1,57 @@
-.character_details {}
+.character_details {
+}
+
+.character_details button {
+    position: absolute;
+    top: 65px;
+    right: 90px;
+}
+
+.character_card, .character_img {
+    display: flex;
+    justify-content: center;
+}
+
+.character_card {
+    column-gap: 25px;
+}
+
+.character_img {
+    border: 4px solid #ccc;
+}
+
+.character_img img {
+    width: 230px;
+    height: 230px;
+}
+
+.character_info {
+}
+
+.character_name {
+    font-size: 22px;
+    color: #c7c7c7;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.character_data {
+    display: flex;
+    column-gap: 50px;
+}
+
+.hint, .data {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.hint {
+    font-weight: 500;
+    color: #c7c7c7;
+}
+
+.data {
+    font-weight: 600;
+    color: #d77474;
+}

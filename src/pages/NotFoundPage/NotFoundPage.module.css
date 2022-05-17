@@ -1,14 +1,21 @@
-.not_found_page {}
+.not_found_page {
+    width: 100vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
 
 .title {
     font-family: 'Bebas Neue', cursive;
     font-size: 33px;
-    color: #3d3d3d;
+    color: #b9be48;
     text-align: center;
     text-transform: capitalize;
     letter-spacing: .1rem;
-    word-spacing: 0.4rem;
-    margin-bottom: 60px;
+    word-spacing: 0.3rem;
+    margin-bottom: 90px;
 }
 
-.err_img {}
+.err_img {
+}

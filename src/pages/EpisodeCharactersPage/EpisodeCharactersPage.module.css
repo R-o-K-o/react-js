@@ -1,0 +1,29 @@
+.episode_characters_page {
+    width: 100vw;
+    padding: 15px 15px 60px;
+}
+
+.episode_characters_page button {
+    position: absolute;
+    top: 15px;
+    right: 43px;
+}
+
+.title {
+    color: #b9be48;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.title, .title span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    word-spacing: 0.3rem;
+}
+
+.title span {
+    color: #ca563f;
+    margin-left: 18px;
+}

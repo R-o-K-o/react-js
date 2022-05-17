@@ -1,0 +1,16 @@
+.btn_back {
+    font-size: 10px;
+    font-weight: 600;
+    color: #e84323;
+    text-transform: uppercase;
+    padding: 8px 4px;
+    border: 3px solid #ca563f;
+    border-radius: 50%;
+    background: black;
+    transition: all .5s;
+}
+
+.btn_back:hover {
+    color: #ca563f;
+    border-color: #e84323;
+}

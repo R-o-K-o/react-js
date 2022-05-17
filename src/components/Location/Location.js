@@ -1,9 +1,16 @@
+import {useNavigate} from "react-router-dom";
+
 import css from './Location.module.css';
 
-export const Location = () => {
+export const Location = ({location}) => {
+    const {id, name} = location;
+
+    const navigate = useNavigate();
+    const navToDetails = () => navigate(`/location/${id}`, {state: location});
+
     return (
-        <div className={css.location}>
-            Location
+        <div onClick={navToDetails} className={css.location_card}>
+            <h2 className={css.location_name}>{name}</h2>
         </div>
     );
 };

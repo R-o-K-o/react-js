@@ -1,32 +1,26 @@
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {useSearchParams} from "react-router-dom";
 
+import {useCharacters, usePagination} from "../../hooks";
 import {characterActions} from "../../redux";
 
+import {Error} from "../Error/Error";
 import {Character} from "../Character/Character";
+import {CharacterFilter} from "../CharacterFilter/CharacterFilter";
 import {Loader, Pagination} from "../UI";
 import css from './Characters.module.css';
 
-export const Characters = () => {
-    const {characters, loading, prev, next} = useSelector(state => state.characters);
-    const [query, setQuery] = useSearchParams({page: '1'});
-
+export const Characters = ({characters: episodeOrLocationCharacters}) => {
+    const {characters, loading, error, prev, next} = useSelector(state => state.characters);
+    const [searchQuery, setSearchQuery] = useState('');
+    const [query, prevPage, nextPage] = usePagination();
+    const characterList = !episodeOrLocationCharacters ? characters : episodeOrLocationCharacters;
+    const foundCharacters = useCharacters(searchQuery, characterList);
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(characterActions.getAll({page: query.get('page')}));
     }, [query]);
-
-    const nextPage = () => {
-        const next = +query.get('page') + 1;
-        setQuery({page: `${next}`});
-    };
-
-    const prevPage = () => {
-        const prev = +query.get('page') - 1;
-        setQuery({page: `${prev}`});
-    };
 
     return (
         <>
@@ -34,14 +28,30 @@ export const Characters = () => {
                 loading
                     ? <Loader/>
                     : <div className={css.characters}>
-                        <h1 className={css.title}>character list</h1>
-                        <div className={css.character_cards}>
-                            {characters.map(character => <Character key={character.id} character={character}/>)}
-                        </div>
-                        <Pagination prev={prev}
-                                    next={next}
-                                    prevPage={prevPage}
-                                    nextPage={nextPage}/>
+                        {
+                            !episodeOrLocationCharacters
+                                ? <CharacterFilter searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
+                                : null
+                        }
+                        {
+                            error || !foundCharacters.length
+                                ? <Error error={!error ? 'not found' : error}/>
+                                : <div className={css.character_cards}>
+                                    {foundCharacters.map(characterItem =>
+                                        <Character key={characterItem.id}
+                                                   characterItem={characterItem}
+                                        />)}
+                                </div>
+                        }
+                        {
+                            !episodeOrLocationCharacters && foundCharacters.length
+                                ? <Pagination prev={prev}
+                                              next={next}
+                                              prevPage={prevPage}
+                                              nextPage={nextPage}
+                                  />
+                                : null
+                        }
                     </div>
             }
         </>

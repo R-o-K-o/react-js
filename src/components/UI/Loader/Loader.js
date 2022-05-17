@@ -4,7 +4,7 @@ export const Loader = () => {
     return (
         <div className={css.my_loader}>
             <img className={css.loader}
-                 src="https://www.svgrepo.com/show/327388/logo-react.svg"
+                 src="https://angular.github.io/react-native-renderer/assets/react.png"
                  alt="rect_logo"
             />
         </div>

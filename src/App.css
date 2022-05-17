@@ -1,15 +1,26 @@
 * {
-  font-family: 'Baloo Chettan 2', cursive;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    font-family: 'Baloo Chettan 2', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a { text-decoration: none; }
+body {
+    background: url("https://wallpaperaccess.com/full/6798923.jpg") 50%/cover no-repeat;
+}
 
-ul { list-style: none; }
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button, input {
+    outline: none;
+}
 
 button {
-  outline: none;
-  cursor: pointer;
+    cursor: pointer;
 }

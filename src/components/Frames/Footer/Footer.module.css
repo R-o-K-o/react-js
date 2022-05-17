@@ -4,19 +4,22 @@
 }
 
 .wrap {
-    min-height: 45px;
+    min-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.text {
+.text a {
     font-size: 16px;
     font-weight: 700;
-    color: #c7c7c7;
+    color: #b6b6b6;
     text-align: center;
     text-transform: capitalize;
     word-spacing: .2em;
 }
 
-.text span { text-transform: uppercase; }
+.text span {
+    text-transform: uppercase;
+    padding-left: 8px;
+}

@@ -30,9 +30,8 @@ const counterSlice = createSlice({
     },
 });
 
-const {
-    reducer:counterReducer,
-    actions:{incCount1, decCount1, resetCount1, incCount2, decCount2, resetCount2}
+const { reducer: counterReducer,
+        actions: {incCount1, decCount1, resetCount1, incCount2, decCount2, resetCount2}
 } = counterSlice;
 
 export default counterReducer;
